@@ -6,9 +6,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-  volumes:
-    - reconftw-data:/var/lib/data/
-  ports:
-    - 5000:5000
+    volumes:
+      - reconftw-data:/var/lib/reconftw
+    ports:
+      - 5000:5000
 volumes:
   reconftw-data:
